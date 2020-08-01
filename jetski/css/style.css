@@ -1,0 +1,302 @@
+.header__top-inner {
+  font-family: "SFProDisplay", sans-serif;
+  font-weight: 700;
+}
+
+.basket__num {
+  font-family: "SFProDisplay", sans-serif;
+  font-weight: 500;
+}
+
+body {
+  font-family: "SFProDisplay", sans-serif;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Barlow";
+  font-display: swap;
+  src: url("../fonts/Barlow-Bold.woff") format("woff"), url("../fonts/Barlow-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow";
+  font-display: swap;
+  src: url("../fonts/Barlow-Regular.woff") format("woff"), url("../fonts/Barlow-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SFProDisplay";
+  font-display: swap;
+  src: url("../fonts/SFProDisplay-Bold.woff") format("woff"), url("../fonts/SFProDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SFProDisplay";
+  font-display: swap;
+  src: url("../fonts/SFProDisplay-Regular.woff") format("woff"), url("../fonts/SFProDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SFProDisplay";
+  font-display: swap;
+  src: url("../fonts/SFProDisplay-Semibold.woff") format("woff"), url("../fonts/SFProDisplay-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SFProDisplay";
+  font-display: swap;
+  src: url("../fonts/SFProDisplay-Medium.woff") format("woff"), url("../fonts/SFProDisplay-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?nfhdgk");
+  src: url("../fonts/icomoon.eot?nfhdgk#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff?nfhdgk") format("woff"), url("../fonts/icomoon.svg?nfhdgk#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-user:before {
+  content: "\e900";
+}
+
+.icon-basket:before {
+  content: "\e901";
+}
+
+.icon-adress-ico:before {
+  content: "\e902";
+}
+
+.icon-heart:before {
+  content: "\e903";
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button:focus,
+input:focus {
+  outline: transparent;
+}
+
+body {
+  font-size: 20px;
+  line-height: 24px;
+  color: #2F3035;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* start header__top */
+
+.header__top-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 122px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.header__top .menu__item {
+  display: inline-block;
+}
+
+.header__top .menu__item + .menu__item {
+  margin-left: 50px;
+}
+
+.header__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__adress {
+  position: relative;
+  padding-left: 20px;
+  margin-right: 60px;
+  width: 265px;
+}
+
+.header__adress::before {
+  position: absolute;
+  content: "\e902";
+  font-family: "icomoon";
+  left: 0;
+  top: -2px;
+}
+
+.user-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 15px;
+}
+
+.user-list__item {
+  margin-right: 10px;
+}
+
+.basket {
+  position: relative;
+}
+
+.basket__num {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #1C62CD;
+  border-radius: 50%;
+  font-size: 10px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  bottom: -6px;
+  right: -15px;
+}
+
+/* end header__top */
+
+/* start header__bottom */
+
+.header__bottom .menu-categories {
+  background-color: #F0F0F4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 53px;
+}
+
+.header__bottom .menu-categories__item {
+  position: relative;
+}
+
+.header__bottom .menu-categories__link {
+  position: absolute;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  padding: 15px 0 14px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.header__bottom .menu-categories__link:hover {
+  color: #000;
+}
+
+.header__bottom .menu-categories__link::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 3px;
+  left: auto;
+  right: 0;
+  background-color: #1C62CD;
+  bottom: -2px;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.header__bottom .menu-categories__link:hover::before {
+  width: 100%;
+  right: auto;
+  left: 0;
+}
+
+/* end header__bottom */

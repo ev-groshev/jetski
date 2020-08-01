@@ -30,9 +30,28 @@ h6 {
 
 a {
 	text-decoration: none;
+	color: inherit;
+}
+
+ul,
+li {
+	list-style: none;
 }
 
 button:focus,
 input:focus {
 	outline: transparent;
+}
+
+body {
+	@extend %sfproDisplay-regular;
+	font-size: 20px;
+	line-height: 24px;
+	color: #2F3035;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
 }
