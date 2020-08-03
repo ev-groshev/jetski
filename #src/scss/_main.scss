@@ -73,6 +73,8 @@
 
 /* start header__bottom */
 .header__bottom {
+	margin-bottom: 78px;
+
 	.menu-categories {
 		background-color: $silver;
 		display: flex;
@@ -85,12 +87,9 @@
 		}
 
 		&__link {
-			position: absolute;
 			transition: all .5s;
 			padding: 15px 0 14px;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
+			position: relative;
 
 			&:hover {
 				color: #000;
@@ -118,3 +117,164 @@
 }
 
 /* end header__bottom */
+
+/* start section banner-section */
+.banner-section {
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__slider {
+		max-width: 870px;
+
+		&-btn {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			background-color: transparent;
+			border: none;
+			margin: 0;
+			padding: 0;
+			z-index: 5;
+			cursor: pointer;
+		}
+
+		&-btnprev {
+			left: 20px;
+		}
+
+		&-btnnext {
+			right: 20px;
+		}
+
+		.slick-dots {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 40px;
+			text-align: center;
+		}
+
+		.slick-dots li {
+			display: inline-block;
+			padding: 0 5px;
+		}
+
+		.slick-dots button {
+			margin: 0;
+			padding: 0;
+			font-size: 0;
+			width: 11px;
+			height: 11px;
+			border: 1px solid #FFFFFF;
+			border-radius: 50%;
+			background-color: transparent;
+		}
+
+		.slick-active button {
+			background-color: #fff;
+		}
+	}
+
+	.sale-item {
+		max-width: 265px;
+		text-align: center;
+		border: 1px solid #CDCDCD;
+		border-radius: 3px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		&__top {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+
+		&__info {
+			padding: 8px 20px;
+			color: #fff;
+			text-transform: uppercase;
+			background-color: $blue;
+			font-size: 12px;
+		}
+
+		&__price {
+			@extend %barlow-bold;
+			text-align: right;
+
+
+			&-new {
+				font-size: 27px;
+				line-height: 32px;
+				color: $blue;
+				margin-right: 6px;
+				padding-right: 20px;
+				position: relative;
+
+				&::after {
+					position: absolute;
+					content: "";
+					background-image: url("../images/icons-price.svg");
+					background-repeat: no-repeat;
+					width: 15px;
+					height: 16px;
+					right: 0;
+					top: 9px;
+				}
+			}
+
+			&-old {
+				display: inline-block;
+				margin-right: 15px;
+				padding: 2px 5px;
+				@extend %barlow-regular;
+				font-size: 14px;
+				line-height: 17px;
+				color: $gray;
+				position: relative;
+				background-image: url("../images/old-line.svg");
+				background-repeat: no-repeat;
+
+				&::after {
+					position: absolute;
+					content: "";
+					background-image: url("../images/icons-price-old.svg");
+					background-repeat: no-repeat;
+					width: 8px;
+					height: 10px;
+					right: -10px;
+					top: 6px;
+				}
+			}
+		}
+
+		img {
+			object-fit: contain;
+		}
+
+		&__title {
+			@extend %sfproDisplay-bold;
+			font-size: 18px;
+			line-height: 21px;
+			margin-bottom: 7px;
+		}
+
+		&__footer {
+			padding: 25px 20px;
+			background-color: #F0F0F4;
+			@extend %sfproDisplay-regular;
+			font-size: 18px;
+			line-height: 21px;
+
+			span {
+				display: block;
+				@extend %barlow-bold;
+				color: $blue;
+			}
+		}
+	}
+}
+
+/* end section banner-section */

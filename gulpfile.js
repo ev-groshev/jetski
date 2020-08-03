@@ -100,7 +100,7 @@ function style() {
 	return src([
 			/* Вставляем что нужно */
 			"node_modules/normalize.css/normalize.css",
-			"node_modules/slick-carousel/slick/slick-theme.css"
+			"node_modules/slick-carousel/slick/slick.css"
 		])
 		.pipe(concat("libs.min.css"))
 		.pipe(cssmin())
