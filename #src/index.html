@@ -13,7 +13,7 @@
 
 	@@include("components/_header.html")
 
-	<section class="banner-section">
+	<section class="banner-section page-section">
 		<div class="container">
 			<div class="banner-section__inner">
 				<div class="banner-section__slider">
@@ -58,6 +58,103 @@
 		</div>
 	</section>
 
+	<!-- start search -->
+	<section class="search page-section">
+		<div class="container">
+			<div class="search__inner">
+				<div class="search__tabs">
+					<a class="search__tabs-item search__tabs-item--active" href="#tab-1">Поиск по номеру</a>
+					<a class="search__tabs-item" href="#tab-2">Поиск по марке</a>
+					<a class="search__tabs-item" href="#tab-3">Поиск по названию товара</a>
+				</div>
+				<div class="search__content">
+					<div id="tab-1" class="search__content-item search__content-item--active">
+						<form class="search__content-form">
+							<input class="search__content-input" type="text" placeholder="Введите номер">
+							<button class="search__content-btn" type="submit">Искать</button>
+						</form>
+					</div>
+					<div id="tab-2" class="search__content-item">
+						<form class="search__content-form">
+							<input class="search__content-input" type="text" placeholder="Введите марку">
+							<button class="search__content-btn" type="submit">Искать</button>
+						</form>
+					</div>
+					<div id="tab-3" class="search__content-item">
+						<form class="search__content-form">
+							<input class="search__content-input" type="text" placeholder="Введите название товара">
+							<button class="search__content-btn" type="submit">Искать</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end search -->
+
+	<!-- start categoties -->
+	<section class="categoties page-section">
+		<div class="container">
+			<div class="categoties__inner">
+				<a class="categoties__item" href="#">
+					<div class="categoties__item-info">
+						<div class="categoties__item-title">Квадроциклы</div>
+						<div class="categoties__item-text">Подробее</div>
+					</div>
+					<div class="categoties__item-img">
+						<img src="images/categories-1.png" alt="">
+					</div>
+
+				</a>
+				<a class="categoties__item" href="#">
+					<div class="categoties__item-info">
+						<div class="categoties__item-title">Гидроциклы</div>
+						<div class="categoties__item-text">Подробее</div>
+					</div>
+					<div class="categoties__item-img">
+						<img src="images/categories-2.png" alt="">
+					</div>
+				</a>
+				<a class="categoties__item" href="#">
+					<div class="categoties__item-info">
+						<div class="categoties__item-title">Катера</div>
+						<div class="categoties__item-text">Подробее</div>
+					</div>
+					<div class="categoties__item-img">
+						<img src="images/categories-3.png" alt="">
+					</div>
+				</a>
+				<a class="categoties__item" href="#">
+					<div class="categoties__item-info">
+						<div class="categoties__item-title">Снегоходы</div>
+						<div class="categoties__item-text">Подробее</div>
+					</div>
+					<div class="categoties__item-img">
+						<img src="images/categories-4.png" alt="">
+					</div>
+				</a>
+				<a class="categoties__item" href="#">
+					<div class="categoties__item-info">
+						<div class="categoties__item-title">Вездеходы</div>
+						<div class="categoties__item-text">Подробее</div>
+					</div>
+					<div class="categoties__item-img">
+						<img src="images/categories-5.png" alt="">
+					</div>
+				</a>
+				<a class="categoties__item" href="#">
+					<div class="categoties__item-info">
+						<div class="categoties__item-title">Двигатели</div>
+						<div class="categoties__item-text">Подробее</div>
+					</div>
+					<div class="categoties__item-img">
+						<img src="images/categories-6.png" alt="">
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!-- end categoties -->
 	@@include("components/_footer.html")
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

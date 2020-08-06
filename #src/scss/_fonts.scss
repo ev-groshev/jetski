@@ -32,6 +32,10 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-link-arrow:before {
+	content: "\e904";
+}
+
 .icon-user:before {
 	content: "\e900";
 }
