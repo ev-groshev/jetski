@@ -740,3 +740,32 @@
 	}
 
 	/* end section footer */
+
+	/* breadcrumps */
+	.breadcrumps {
+		&__list-item {
+			display: inline-block;
+			padding-right: 15px;
+			margin-right: 10px;
+			position: relative;
+			font-size: 15px;
+			line-height: 18px;
+			color: $gray;
+
+			&::after {
+				position: absolute;
+				content: "";
+				background-image: url("../images/link-arrow.svg");
+				width: 6px;
+				height: 10px;
+				right: 0;
+				bottom: 4px;
+			}
+
+			&:last-child::after {
+				display: none;
+			}
+		}
+	}
+
+	/* end breadcrumps */
