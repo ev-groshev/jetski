@@ -11,6 +11,7 @@
 	"devDependencies": {
 		"@babel/core": "^7.11.0",
 		"@babel/preset-env": "^7.11.0",
+		"@rateyo/jquery": "^3.0.0-alpha.2",
 		"browser-sync": "^2.26.12",
 		"del": "^5.1.0",
 		"gulp": "^4.0.2",
@@ -30,7 +31,10 @@
 		"gulp-ttf2woff": "^1.1.1",
 		"gulp-ttf2woff2": "^3.0.0",
 		"gulp-uglify-es": "^2.0.0",
+		"ion-rangeslider": "^2.3.1",
+		"jquery-form-styler": "^2.0.2",
 		"normalize.css": "^8.0.1",
+		"rateyo": "^2.3.5",
 		"slick-carousel": "^1.8.1"
 	}
 }
