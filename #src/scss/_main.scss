@@ -1339,3 +1339,263 @@
 	}
 
 	/* end catalog */
+
+	/* start product-card */
+	.product-card {
+		margin-bottom: 80px;
+
+
+
+		&__inner {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__img-box {
+			max-width: 500px;
+			width: 100%;
+			padding-top: 64px;
+			text-align: center;
+			position: relative;
+
+			&::before {
+				font-size: 15px;
+				line-height: 18px;
+				letter-spacing: 0.12em;
+				padding: 13px 25px;
+				border-radius: 3px;
+			}
+		}
+
+		&__content {
+			max-width: 570px;
+			width: 100%;
+		}
+
+		&__price-old {
+			margin-top: 17px;
+			margin-bottom: 0;
+			@extend %barlow-regular;
+			font-size: 30px;
+			line-height: 41px;
+			opacity: 0.6;
+			display: inline-block;
+			background-image: url("../images/old-line.svg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		&__price-new {
+			@extend %barlow-bold;
+			font-size: 40px;
+			line-height: 48px;
+			margin-bottom: 18px;
+		}
+
+		&__link {
+			font-size: 15px;
+			line-height: 18px;
+			color: $blue;
+		}
+
+
+	}
+
+	.product-card__content-title {
+		@extend %sfproDisplay-bold;
+		font-size: 30px;
+		line-height: 36px;
+		margin-bottom: 10px;
+	}
+
+	.product-card__code {
+		font-size: 15px;
+		line-height: 18px;
+		opacity: .6;
+		margin-bottom: 25px;
+	}
+
+	.product-card__buttons {
+		margin-bottom: 50px;
+	}
+
+	.product-card__tabs {
+		display: flex;
+
+	}
+
+	.product-card__tab {
+		margin-right: 34px;
+		font-size: 20px;
+		line-height: 24px;
+		opacity: 0.6;
+		padding-bottom: 5px;
+		margin-bottom: 20px;
+	}
+
+	.product-card__tab.tab--active {
+		font-weight: bold;
+		color: #2F3035;
+		opacity: 1;
+
+		border-bottom: 2px solid $blue;
+	}
+
+	.product-card__item {
+
+		display: flex;
+		justify-content: space-between;
+		font-size: 20px;
+		line-height: 24px;
+		padding-bottom: 6px;
+		border-bottom: 1px solid rgba(#2F3035, .1);
+		margin-bottom: 15px;
+	}
+
+	.product-card__right {
+		padding-left: 15px;
+		width: 125px;
+	}
+
+	.product-card__more {
+		margin-top: 20px;
+		font-size: 14px;
+		line-height: 17px;
+		color: $blue;
+		border-bottom: 1px solid $blue;
+	}
+
+	.product-card__btn {
+		margin-top: 45px;
+		display: block;
+		padding: 15px 43px;
+
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: #fff;
+		background-color: $blue;
+		border: none;
+		border-radius: 3px;
+		cursor: pointer;
+	}
+
+	.product-card__buttons a+a {
+		margin-left: 30px;
+	}
+
+	.card__tab-box {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		background: #F0F0F4;
+		padding: 22px 0;
+		margin-bottom: 50px;
+	}
+
+	.card__tab {
+		font-size: 20px;
+		line-height: 24px;
+		opacity: 0.6;
+		padding-bottom: 5px;
+	}
+
+	.card__tab.tab--active {
+		border-bottom: 2px solid $blue;
+		opacity: 1;
+	}
+
+	.card__top-line {
+		margin-bottom: 10px;
+
+
+	}
+
+	.card__label-search {
+		font-size: 17px;
+		line-height: 20px;
+		color: rgba(#2F3035, .7);
+
+	}
+
+	.card__input-search {
+		margin-left: 17px;
+		background: #F0F0F4;
+		border-radius: 3px;
+		border: none;
+		padding: 9px 37px 9px 17px;
+		margin-right: 100px;
+	}
+
+	.card__label-pickup {
+		margin-left: 54px;
+		font-size: 17px;
+		line-height: 20px;
+		color: rgba(#2F3035, .7);
+	}
+
+	.card__list {
+		margin-top: 50px;
+		margin-bottom: 100px;
+	}
+
+	.card__list-item {
+		padding: 20px 0;
+		border-bottom: 1px solid rgba(#2F3035, .1);
+		display: flex;
+		align-items: center;
+		font-size: 16px;
+		line-height: 22px;
+		color: rgba(#2F3035, .7);
+	}
+
+	.card__list-itemtitle {
+		font-size: 20px;
+		line-height: 24px;
+		color: #2F3035;
+		border-bottom: none;
+	}
+
+	.card__list-address {
+		width: 220px;
+		margin-right: 80px;
+	}
+
+	.card__list-workhours {
+		width: 157px;
+		margin-right: 96px;
+
+		.workhours {
+			display: flex;
+			justify-content: space-between;
+
+		}
+	}
+
+	.card__list-aviable {
+		width: 140px;
+		margin-right: 60px;
+	}
+
+	.card__list-num {
+		width: 104px;
+	}
+
+	.card__list-btn {
+		margin-left: auto;
+
+		button {
+			border-radius: 3px;
+			padding: 10px 40px;
+			border: none;
+			background-color: $blue;
+			text-transform: uppercase;
+			font-size: 13px;
+			line-height: 16px;
+			letter-spacing: 0.12em;
+			color: #fff;
+		}
+	}
+
+	/* end product-card */

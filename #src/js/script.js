@@ -54,4 +54,11 @@ $(function () {
 		$('.product__wrapper').addClass('product__wrapper--list');
 	});
 
+	$(".rateYo").rateYo({
+		ratedFill: "#1C62CD",
+		normalFill: "#C4C4C4",
+		spacing: "7px",
+		starWidth: "23px"
+	});
+
 });
