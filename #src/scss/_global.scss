@@ -12,6 +12,7 @@ html,
 body {
 	height: 100%;
 	position: relative;
+	overflow: overlay;
 }
 
 ul,
@@ -49,6 +50,8 @@ body {
 	font-size: 20px;
 	line-height: 24px;
 	color: #2F3035;
+	overflow-x: hidden;
+	min-width: 320px;
 }
 
 .container {
@@ -59,4 +62,18 @@ body {
 
 .page-section {
 	margin-bottom: 80px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+.page-bottom {
+	flex: 0 0 auto;
 }

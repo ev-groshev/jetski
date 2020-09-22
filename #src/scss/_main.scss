@@ -10,6 +10,11 @@
 			line-height: 24px;
 		}
 
+		.menu__btn {
+			display: none;
+			padding: 0;
+		}
+
 		.menu__item {
 			display: inline-block;
 
@@ -27,14 +32,16 @@
 
 	.header__adress {
 		position: relative;
-		padding-left: 20px;
+		padding-left: 30px;
 		margin-right: 60px;
 		width: 265px;
 
 		&::before {
 			position: absolute;
-			content: "\e902";
-			font-family: "icomoon";
+			content: "";
+			background-image: url("../images/location.svg");
+			width: 30px;
+			height: 30px;
 			left: 0;
 			top: -2px;
 		}
@@ -50,8 +57,24 @@
 		margin-right: 10px;
 	}
 
+	.favorite {
+		background-image: url("../images/favorite.svg");
+		width: 24px;
+		height: 22px;
+	}
+
+	.user {
+		background-image: url("../images/user.svg");
+		width: 24px;
+		height: 24px;
+	}
+
 	.basket {
 		position: relative;
+		background-image: url("../images/basket.svg");
+		background-repeat: no-repeat;
+		width: 30px;
+		height: 23px;
 
 		&__num {
 			position: absolute;
@@ -70,6 +93,63 @@
 	}
 
 	/* end header__top */
+	.menu-mobile__list {
+		display: none;
+		width: 243px;
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+		transform: translateX(-100%);
+		transition: all .3s;
+		position: absolute;
+		background-color: #fff;
+	}
+
+	.menu-mobile__list--active {
+		transform: translateX(0%);
+	}
+
+	.menu-mobile__item {
+		position: relative;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	}
+
+	.menu-mobile__link {
+		display: block;
+		padding-left: 53px;
+		padding-top: 36px;
+
+		span {
+			display: block;
+		}
+	}
+
+	.menu-mobile__img {
+		position: absolute;
+		left: 11px;
+		bottom: 0;
+
+	}
+
+
+
+	.menu-mobile__linewrapper {
+		display: none;
+		background-color: #F0F0F4;
+		padding: 14px 15px 14px;
+		overflow-x: scroll;
+
+		& .menu-mobile__line {
+			width: 450px;
+		}
+
+		& .menu__item {
+			display: inline-block;
+			margin-right: 15px;
+			@extend %sfproDisplay-bold;
+			font-size: 20px;
+			line-height: 24px;
+
+		}
+	}
 
 	/* start header__bottom */
 	.header__bottom {
@@ -711,7 +791,7 @@
 		}
 
 		&__top-social {
-			width: 250px;
+
 
 			.social-list {
 				margin-top: 37px;

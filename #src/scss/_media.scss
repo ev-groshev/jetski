@@ -1,0 +1,149 @@
+@media (max-width: 1100px) {
+	.header__top .menu__item+.menu__item {
+		margin-left: 20px;
+	}
+
+	.header__adress {
+		margin-right: 20px;
+	}
+}
+
+@media (max-width: 978px) {
+	.footer__top-inner {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+}
+
+@media (max-width: 968px) {
+	.page-bottom {
+		overflow: hidden;
+	}
+
+	.header__bottom {
+		display: none;
+	}
+
+	.menu__list {
+		display: none;
+	}
+
+	.header__top .menu__btn {
+		display: block;
+		background-color: transparent;
+		cursor: pointer;
+		border: none;
+
+		&-line {
+			width: 34px;
+			height: 3px;
+			background-color: #2F3035;
+			border-radius: 3px;
+			margin: 8px 0;
+		}
+	}
+
+	.menu-mobile__list {
+		display: block;
+	}
+
+	.menu-mobile__linewrapper {
+		display: block;
+	}
+
+
+}
+
+
+@media (max-width: 790px) {
+	.footer__top-item {
+		margin-bottom: 25px;
+	}
+}
+
+@media (max-width: 540px) {
+	.footer__top-item {
+		width: 100%;
+		border-bottom: 2px solid rgba(100, 100, 100, 0.205);
+	}
+
+	.footer__bottom {
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.footer__bottom-link {
+		margin: 12px 0;
+	}
+
+	.footer__bottom-link+.footer__bottom-link {
+		margin: 0;
+	}
+
+	.footer__top-inner {
+		justify-content: start;
+	}
+
+	.footer__top-newslatter {
+		margin-right: 0;
+		border-bottom: none;
+
+		.footer__top-title {
+			text-align: center;
+		}
+
+	}
+
+	.footer__top-social .social-list {
+		justify-content: center;
+
+	}
+
+	.footer__top-item.footer__top-social {
+		border-bottom: none;
+	}
+
+	.footer__list {
+		display: none;
+	}
+
+	.footer__top-title.footer__topdrop {
+		padding: 15px 0;
+
+
+		font-size: 14px;
+		line-height: 18px;
+		color: #7F7F7F;
+		position: relative;
+
+		&::after {
+			position: absolute;
+			content: "";
+			background-image: url(../images/arrow-down.svg);
+			width: 12px;
+			height: 8px;
+			right: 5px;
+			bottom: 20px;
+		}
+
+		&--active::after {
+			transform: rotate(180deg);
+		}
+	}
+
+	.footer__top-itemdrop {
+		margin-bottom: 0;
+		border-top: 2px solid rgba(100, 100, 100, 0.205);
+
+	}
+
+
+}
+
+@media (max-width: 640px) {
+	.header__adress {
+		display: none;
+	}
+
+
+}
