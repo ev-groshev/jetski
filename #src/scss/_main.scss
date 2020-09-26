@@ -832,7 +832,7 @@
 	/* breadcrumps */
 	.breadcrumps {
 		margin-top: 20px;
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 
 		&__list-item {
 			display: inline-block;
@@ -1447,7 +1447,6 @@
 		}
 
 		&__img-box {
-			max-width: 500px;
 			width: 100%;
 			padding-top: 64px;
 			text-align: center;
@@ -1494,6 +1493,10 @@
 		}
 
 
+	}
+
+	.product-card__btn.product-card__btn-mobile {
+		display: none;
 	}
 
 	.product-card__content-title {
