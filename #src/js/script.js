@@ -5,6 +5,13 @@ $(function () {
 		dots: true,
 		prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"><img src="images/arrows-left.svg" alt=""></button>',
 		nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="images/arrows-right.svg" alt=""></button>',
+		responsive: [{
+			breakpoint: 800,
+			settings: {
+				arrows: false,
+				dots: true
+			}
+		}]
 	});
 
 	$('.tab').on('click', function (e) {
