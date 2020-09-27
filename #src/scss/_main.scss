@@ -525,7 +525,10 @@
 			}
 		}
 
+
 		.product__slider {
+
+
 			&-btn {
 				position: absolute;
 				top: 50%;
@@ -563,6 +566,8 @@
 	.product__wrapper {
 		width: 271px;
 		position: relative;
+		margin-left: auto;
+		margin-right: auto;
 
 
 		&.product-item__not-available {

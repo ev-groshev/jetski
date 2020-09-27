@@ -77,8 +77,13 @@
 	}
 
 	.mobile-overflow {
-		width: 1000px;
+		min-width: 720px;
 	}
+
+	.mobile-overflow.mobile-overflow--short {
+		min-width: 620px;
+	}
+
 
 	.card__list-item {
 		display: block;
